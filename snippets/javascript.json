@@ -1,0 +1,111 @@
+{
+  "Function": {
+    "prefix": [
+      "func"
+    ],
+    "body": [
+      "function ${1:functionName}($2) {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Class": {
+    "prefix": [
+      "cls"
+    ],
+    "body": [
+      "class ${1:ClassName} {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Method": {
+    "prefix": [
+      "meth"
+    ],
+    "body": [
+      "${1:functionName}($2) {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "for (index)": {
+    "prefix": "fori",
+    "body": [
+      "for (let ${1:index} = 0; ${1:index} < ${2:array}.length; ${1:index}++) {",
+      "\tconst ${3:element} = ${2:array}[${1:index}];",
+      "\t$0",
+      "}"
+    ],
+    "description": "For Loop"
+  },
+  "for": {
+    "prefix": [
+      "for"
+    ],
+    "body": [
+      "${1:array}.forEach((${2:element}) => {",
+      "\t$0",
+      "});"
+    ]
+  },
+  "if": {
+    "prefix": [
+      "if"
+    ],
+    "body": [
+      "if (${1:condition}) {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "else": {
+    "prefix": "else",
+    "body": [
+      "else {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "else if": {
+    "prefix": "elseif",
+    "body": [
+      "else if (${1:condition}) {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "switch": {
+    "prefix": [
+      "switch"
+    ],
+    "body": [
+      "switch (${1:key}) {",
+      "\tcase ${2:value}:",
+      "\t\t$0",
+      "\t\tbreak;",
+      "}"
+    ]
+  },
+  "log": {
+    "prefix": [
+      "log"
+    ],
+    "body": [
+      "console.log($0)"
+    ]
+  },
+  "try-catch": {
+    "prefix": [
+      "try"
+    ],
+    "body": [
+      "try {",
+      "\t$0",
+      "} catch (err) {",
+      "\t",
+      "}"
+    ],
+    "description": "Try-Catch Statement"
+  }
+}

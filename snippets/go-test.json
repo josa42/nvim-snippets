@@ -1,0 +1,23 @@
+{
+  "it should": {
+    "prefix": [
+      "its"
+    ],
+    "body": [
+      "t.Run(\"it should $1\", func(t *testing.T) {",
+      "\t$0",
+      "})"
+    ]
+  },
+  "describe": {
+    "prefix": [
+      "desc"
+    ],
+    "description": "describe",
+    "body": [
+      "func Test${1}(t *testing.T) {",
+      "\t$0",
+      "}"
+    ]
+  }
+}

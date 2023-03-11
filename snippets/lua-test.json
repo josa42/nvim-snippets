@@ -1,0 +1,22 @@
+{
+  "it should": {
+    "prefix": [
+      "its"
+    ],
+    "body": [
+      "it(\"should $1\", function()",
+      "\t$0",
+      "end)"
+    ]
+  },
+  "describe": {
+    "prefix": [
+      "desc"
+    ],
+    "body": [
+      "describe(\"$1\", function()",
+      "\t$0",
+      "end)"
+    ]
+  }
+}

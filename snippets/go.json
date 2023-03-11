@@ -1,0 +1,109 @@
+{
+  "Function": {
+    "prefix": [
+      "func"
+    ],
+    "body": [
+      "func ${1:Name} ($2)$3 {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Class": {
+    "prefix": [
+      "cls"
+    ],
+    "body": [
+      "type ${1:Name} struct {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "Methode": {
+    "prefix": [
+      "meth"
+    ],
+    "body": [
+      "func (${1:s} ${2:struct}) ${3:Name} ($4)$5 {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "for (index)": {
+    "prefix": "fori",
+    "body": [
+      "for ${1:index} := range ${3:slice} {",
+      "\t$0",
+      "}"
+    ],
+    "description": "For Loop"
+  },
+  "for": {
+    "prefix": [
+      "for"
+    ],
+    "body": [
+      "for ${1:_}, ${2:element} := range ${3:slice} {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "if": {
+    "prefix": [
+      "if"
+    ],
+    "body": [
+      "if ${1:condition} {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "else": {
+    "prefix": "else",
+    "body": [
+      "else {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "else if": {
+    "prefix": "elseif",
+    "body": [
+      "else if ${1:condition} {",
+      "\t$0",
+      "}"
+    ]
+  },
+  "switch": {
+    "prefix": [
+      "switch"
+    ],
+    "body": [
+      "switch ${1:key} {",
+      "case ${2:value}:",
+      "\t$3",
+      "}"
+    ]
+  },
+  "log": {
+    "prefix": [
+      "log"
+    ],
+    "body": [
+      "log.Print($0)"
+    ]
+  },
+  "try-catch": {
+    "prefix": [
+      "try"
+    ],
+    "body": [
+      "defer func() {",
+      "\tif err := recover(); err != nil {",
+      "\t\tlog.Println(\"Error: \", err)",
+      "\t}",
+      "}()",
+      "$0"
+    ]
+  }
+}

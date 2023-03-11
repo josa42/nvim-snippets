@@ -1,0 +1,65 @@
+{
+  "Class": {
+    "prefix": [
+      "cls"
+    ],
+    "body": []
+  },
+  "for (index)": {
+    "prefix": "fori",
+    "body": [],
+    "description": "For Loop"
+  },
+  "for": {
+    "prefix": [
+      "for"
+    ],
+    "body": []
+  },
+  "if": {
+    "prefix": [
+      "if"
+    ],
+    "body": []
+  },
+  "else": {
+    "prefix": "else",
+    "body": []
+  },
+  "else if": {
+    "prefix": "elseif",
+    "body": []
+  },
+  "switch": {
+    "prefix": [
+      "switch"
+    ],
+    "body": []
+  },
+  "log": {
+    "prefix": [
+      "log"
+    ],
+    "body": []
+  },
+  "try-catch": {
+    "prefix": [
+      "try"
+    ],
+    "body": [],
+    "description": "Try-Catch Statement"
+  },
+  "it should": {
+    "prefix": [
+      "its"
+    ],
+    "body": []
+  },
+  "describe": {
+    "prefix": [
+      "desc"
+    ],
+    "description": "describe",
+    "body": []
+  }
+}

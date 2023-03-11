@@ -1,0 +1,90 @@
+{
+  "Function": {
+    "prefix": [
+      "func"
+    ],
+    "body": [
+      "function ${1:Name}($2)",
+      "\t$0",
+      "end"
+    ]
+  },
+  "Class": {
+    "prefix": [
+      "cls"
+    ],
+    "body": []
+  },
+  "Methode": {
+    "prefix": [
+      "meth"
+    ],
+    "body": []
+  },
+  "for (index)": {
+    "prefix": "fori",
+    "body": [
+      "for ${1:index} in ${2:table}",
+      "\t$0",
+      "end"
+    ],
+    "description": "For Loop"
+  },
+  "for": {
+    "prefix": [
+      "for"
+    ],
+    "body": [
+      "for ${1:index},${2:value} in ${3:table}",
+      "\t$0",
+      "end"
+    ]
+  },
+  "if": {
+    "prefix": [
+      "if"
+    ],
+    "body": [
+      "if ${1:condition} then",
+      "\t$0",
+      "end"
+    ]
+  },
+  "else": {
+    "prefix": "else",
+    "body": [
+      "else",
+      "\t$0",
+      "end"
+    ]
+  },
+  "else if": {
+    "prefix": "elseif",
+    "body": [
+      "elseif ${1:condition} then",
+      "\t$0",
+      "end"
+    ]
+  },
+  "log": {
+    "prefix": [
+      "log"
+    ],
+    "body": [
+      "print($0)"
+    ]
+  },
+  "try-catch": {
+    "prefix": [
+      "try"
+    ],
+    "body": [
+      "local ok, err = pcall(function()",
+      "\t$0",
+      "end)",
+      "if not ok then",
+      "\tprint(err)",
+      "end"
+    ]
+  }
+}
